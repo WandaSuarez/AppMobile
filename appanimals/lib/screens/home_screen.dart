@@ -19,17 +19,30 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       drawer: const CustomDrawer(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/portada.png'), // Ruta de tu imagen local
-            const SizedBox(height: 20), // Espaciado entre la imagen y el texto
-            const Text(
-              "Este es un texto normal debajo de la imagen.",
-              style: TextStyle(fontSize: 18),
-            ),
-          ],
+      body: SingleChildScrollView(
+        // Hace que el contenido sea desplazable
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/images/portada.png', // Ruta de tu imagen
+                width: double
+                    .infinity, // El ancho de la imagen ocupa todo el ancho de la pantalla
+                height:
+                    400, // Altura de la imagen, ajusta según tus necesidades
+                fit: BoxFit
+                    .cover, // Ajusta la imagen para que ocupe todo el espacio disponible sin distorsionar
+              ),
+              const SizedBox(
+                  height: 20), // Espaciado entre la imagen y el texto
+              const Text(
+                'Bienvenido a la aplicación de animales "Amor Salvaje"💖.\nAutores: Miqueas Correa, Wanda Suarez, Matias Hittler, Brenda Yañez.',
+                style: TextStyle(fontSize: 20),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
