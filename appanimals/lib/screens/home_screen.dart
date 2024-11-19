@@ -23,8 +23,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-                'appanimals/assets/images/portada.png'), // Ruta de tu imagen local
+            Image.asset('assets/images/portada.png'), // Ruta de tu imagen local
             const SizedBox(height: 20), // Espaciado entre la imagen y el texto
             const Text(
               "Este es un texto normal debajo de la imagen.",
