@@ -1,0 +1,1 @@
+ C:\\Users\\Lenovo\\Downloads\\Tp2_labo_flutter\\AppMobile\\appanimals\\.dart_tool\\flutter_build\\80fe5530f1f8b4bfe049bcf1bc6ae7c1\\native_assets.yaml: 
